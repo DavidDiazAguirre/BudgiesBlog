@@ -1,10 +1,10 @@
-* :not(li){
-    font-family: Arial, Helvetica, sans-serif;
+* :not(li){ /* Center's all page text except for li using the :not pseudo class, for formatting purposes below */
+    font-family: Arial, Helvetica, sans-serif; /* Sets all fonts to the Arial font family */
     text-align: center;
 }
   
 ul {
-    border: 2px solid skyblue;
+    border: 2px solid skyblue; /* creates a solid blue border around the ul */
     display: inline-block; /* Make the list items align horizontally */
     text-align: left; /* Align the text of list items to the left */
     
@@ -13,11 +13,11 @@ ul {
 li {
     list-style-position: inside; /* Move the bullet to the left of the text */
     font-family: Arial, Helvetica, sans-serif;
-    padding: .5em;
+    padding: .5em; /* Adds some white space between bullet points */
 }
 
 .container {
-    text-align: center; /* Center align the content of the container */
+    text-align: center; /* Center align the content of the container class, which are the divs that hold the ul and form */
   }
 form {
     display: inline-block; /* Make the radio buttons align horizontally */
@@ -29,40 +29,49 @@ form {
 input[type="radio"] {
     vertical-align: middle; /* Align the radio button with its label */
     margin-right: 5px; /* Add a small space between the radio button and its label */
-    margin-bottom: .75em;
+    margin-bottom: .75em; /* Adds space under each bullet */
   }
-
-input[type="submit"] {
-    background-color: lightpink;
-    border-radius: 20px;
-    font-size: 1em;
-    padding-inline: 10px;
-    padding-block: 5px;
-}
-input[type="submit"]:hover {
+input[type="radio"]:hover { /* Using the :hover pseudo class, the cursor becomes a pointer when hovered on a radio button */
     cursor: pointer;
 }
 
-table {
-    margin: auto;
-    width: 20%;
+input[type="submit"] {
+    background-color: lightpink; /* Makes the button a nice pink color */
+    border-radius: 20px; /* I found this gives the borders of the button an nice round shape */
+    font-size: 1em;
+    padding-inline: 10px; /* The horizontal padding between the button text and the border */
+    padding-block: 5px; /* The vertical padding between the button text and the border */
+}
+input[type="submit"]:hover { /* Makes the cursor become a pointer when over the submit button in the same way as the radio buttons above */
+    cursor: pointer;
 }
 
-th, td {
-    text-align: left; /* Center the text under the headers */
+table { /* Setting the margin to auto centered the table, and the width dictates how far across the screen the table spans */
+    margin: auto;
+    width: 30%;
+}
+
+th, td { 
+    text-align: left; /* Center the td and th text */
     vertical-align: middle; /* Vertically center the text in the cells */
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid black; /* Makes a thin black line under each th and td to separate */
     padding: 10px;
 }
 
 .like {
-    color: rgb(81, 158, 33);
+    color: rgb(81, 158, 33); /* Put the like class on the td elements for the likes, to make them green */
 }
 
 .dislike {
-    color: rgb(224, 23, 9)
+    color: rgb(224, 23, 9) /* Similar as above but red, because red bad */
 }
-  
-.top :hover {
-    color: red;
+
+#kiwipic { /* Using an id selector, created a small colored border around the intro pics or both birds */
+    border: 2px solid rgb(82, 223, 82);
+    padding: 5px;
+}
+
+#skypic {
+    border: 2px solid rgb(88, 190, 224);
+    padding: 5px;
 }
