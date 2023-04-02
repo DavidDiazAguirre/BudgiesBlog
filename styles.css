@@ -1,0 +1,68 @@
+* :not(li){
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+  
+ul {
+    border: 2px solid skyblue;
+    display: inline-block; /* Make the list items align horizontally */
+    text-align: left; /* Align the text of list items to the left */
+    
+}
+  
+li {
+    list-style-position: inside; /* Move the bullet to the left of the text */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .5em;
+}
+
+.container {
+    text-align: center; /* Center align the content of the container */
+  }
+form {
+    display: inline-block; /* Make the radio buttons align horizontally */
+    text-align: left; /* Align the radio buttons to the left */
+    border: 2px solid skyblue;
+    padding: 10px;      
+  }
+  
+input[type="radio"] {
+    vertical-align: middle; /* Align the radio button with its label */
+    margin-right: 5px; /* Add a small space between the radio button and its label */
+    margin-bottom: .75em;
+  }
+
+input[type="submit"] {
+    background-color: lightpink;
+    border-radius: 20px;
+    font-size: 1em;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+table {
+    margin: auto;
+    width: 20%;
+}
+
+th, td {
+    text-align: left; /* Center the text under the headers */
+    vertical-align: middle; /* Vertically center the text in the cells */
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.like {
+    color: rgb(81, 158, 33);
+}
+
+.dislike {
+    color: rgb(224, 23, 9)
+}
+  
+.top :hover {
+    color: red;
+}
